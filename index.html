@@ -11,9 +11,6 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg-glow" aria-hidden="true"></div>
-  <div class="bg-grid" aria-hidden="true"></div>
-
   <header class="site-header">
     <a class="logo" href="#top">Anas Rasheed</a>
     <nav class="nav" aria-label="Primary">
@@ -28,15 +25,21 @@
 
   <main id="top">
     <section class="hero">
-      <p class="hero-kicker reveal">Senior Flutter · Mobile Team Lead · Instructor</p>
-      <h1 class="reveal">Anas Rasheed</h1>
-      <p class="hero-text reveal">
-        Building production mobile apps across fintech, banking, and payments —
-        from architecture and integrations to release and team leadership.
-      </p>
-      <div class="hero-actions reveal">
-        <a class="btn" href="#projects">View Projects</a>
-        <a class="btn btn-ghost" href="mailto:anasrasheed64@gmail.com">Email Me</a>
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/images/hero-keyboard.jpg" alt="" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-kicker reveal">Senior Flutter · Mobile Team Lead · Instructor</p>
+        <h1 class="reveal">Anas Rasheed</h1>
+        <p class="hero-text reveal">
+          Building production mobile apps across fintech, banking, and payments —
+          from architecture and integrations to release and team leadership.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="mailto:anasrasheed64@gmail.com">Email Me</a>
+        </div>
       </div>
     </section>
 
@@ -45,18 +48,34 @@
         <p class="eyebrow">About</p>
         <h2>Mobile engineer with real production depth</h2>
       </div>
-      <div class="about-grid reveal">
-        <p>
-          Flutter developer with 6+ years of experience delivering iOS/Android apps for banking,
-          wallets, FX exchange, logistics, e-commerce, and media. I lead mobile delivery, mentor engineers,
-          and teach Flutter at StepByStep Academy since 2021.
-        </p>
-        <ul class="facts">
-          <li><span>Based in</span> Amman, Jordan</li>
-          <li><span>Focus</span> Flutter / Fintech / Team Lead</li>
-          <li><span>Teaching</span> Flutter Instructor since 2021</li>
-          <li><span>Delivery</span> Play Store + App Store + CI/CD</li>
-        </ul>
+      <div class="about-layout reveal">
+        <div class="about-copy">
+          <p>
+            Flutter developer with 6+ years of experience delivering iOS/Android apps for banking,
+            wallets, FX exchange, logistics, e-commerce, and media. I lead mobile delivery, mentor engineers,
+            and teach Flutter at StepByStep Academy since 2021.
+          </p>
+          <ul class="facts">
+            <li><span>Based in</span> Amman, Jordan</li>
+            <li><span>Focus</span> Flutter / Fintech / Team Lead</li>
+            <li><span>Teaching</span> Flutter Instructor since 2021</li>
+            <li><span>Delivery</span> Play Store + App Store + CI/CD</li>
+          </ul>
+        </div>
+        <figure class="about-visual">
+          <img src="assets/images/developer-desk.jpg" alt="Developer workspace with laptop and code" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="visual-band" aria-hidden="true">
+      <div class="visual-band-track">
+        <img src="assets/images/code-screen.jpg" alt="" />
+        <img src="assets/images/laptop-code.jpg" alt="" />
+        <img src="assets/images/hero-keyboard.jpg" alt="" />
+      </div>
+      <div class="visual-band-caption">
+        <p>Code · Craft · Shipping production mobile software</p>
       </div>
     </section>
 
@@ -138,7 +157,10 @@
       </div>
     </section>
 
-    <section id="experience" class="section">
+    <section id="experience" class="section experience-section">
+      <div class="experience-backdrop" aria-hidden="true">
+        <img src="assets/images/code-screen.jpg" alt="" />
+      </div>
       <div class="section-head reveal">
         <p class="eyebrow">Experience</p>
         <h2>Leadership, delivery, and teaching</h2>
@@ -183,6 +205,7 @@
       <div class="contact-panel reveal">
         <a href="mailto:anasrasheed64@gmail.com">anasrasheed64@gmail.com</a>
         <a href="tel:+962790308976">+962 79 030 8976</a>
+        <a href="https://anassrasheed.github.io/" target="_blank" rel="noopener">anassrasheed.github.io</a>
         <a href="https://github.com/anassrasheed/" target="_blank" rel="noopener">github.com/anassrasheed</a>
         <a href="https://www.linkedin.com/in/anass-rasheed/" target="_blank" rel="noopener">linkedin.com/in/anass-rasheed</a>
         <p class="location">Amman, Jordan</p>
