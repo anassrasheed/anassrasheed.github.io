@@ -69,7 +69,7 @@ open index.html
 
 Or deploy the folder to **GitHub Pages**.
 
-PDF version: `Anas_Rasheed_Portfolio.pdf`
+Download CV: [Anas_Rasheed_CV.pdf](./Anas_Rasheed_CV.pdf)
 
 ---
 
