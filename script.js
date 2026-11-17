@@ -1,6 +1,37 @@
 document.documentElement.classList.add("js-ready");
 document.getElementById("year").textContent = new Date().getFullYear();
 
+const navToggle = document.getElementById("nav-toggle");
+const nav = document.getElementById("site-nav");
+
+function closeNav() {
+  document.body.classList.remove("nav-open");
+  if (navToggle) navToggle.setAttribute("aria-expanded", "false");
+  if (navToggle) navToggle.setAttribute("aria-label", "Open menu");
+}
+
+function toggleNav() {
+  const isOpen = document.body.classList.toggle("nav-open");
+  if (navToggle) {
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+    navToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+  }
+}
+
+if (navToggle) {
+  navToggle.addEventListener("click", toggleNav);
+}
+
+if (nav) {
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeNav);
+  });
+}
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 760) closeNav();
+});
+
 const reveals = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {
@@ -13,7 +44,7 @@ if ("IntersectionObserver" in window) {
         }
       });
     },
-    { threshold: 0.16 }
+    { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
   );
 
   reveals.forEach((el, index) => {
