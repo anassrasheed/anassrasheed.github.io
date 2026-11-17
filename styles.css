@@ -20,9 +20,9 @@ body {
   font-family: var(--font-body);
   color: var(--text);
   background:
-    radial-gradient(900px 500px at 85% 8%, rgba(56, 189, 248, 0.14), transparent 55%),
-    radial-gradient(700px 420px at 10% 30%, rgba(94, 234, 212, 0.08), transparent 50%),
-    linear-gradient(180deg, #0a1424 0%, #0d182b 45%, #101c31 100%);
+    radial-gradient(1000px 560px at 80% 0%, rgba(56, 189, 248, 0.28), transparent 55%),
+    radial-gradient(800px 480px at 8% 18%, rgba(94, 234, 212, 0.16), transparent 50%),
+    linear-gradient(180deg, #15233a 0%, #1a2b45 42%, #203352 100%);
   min-height: 100vh;
   line-height: 1.6;
 }
@@ -143,8 +143,8 @@ main {
 
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(7, 12, 22, 0.92) 0%, rgba(7, 12, 22, 0.72) 48%, rgba(7, 12, 22, 0.35) 100%),
-    linear-gradient(180deg, rgba(7, 12, 22, 0.2) 0%, rgba(7, 12, 22, 0.88) 100%);
+    linear-gradient(105deg, rgba(12, 22, 40, 0.72) 0%, rgba(12, 22, 40, 0.38) 42%, rgba(12, 22, 40, 0.12) 70%, rgba(12, 22, 40, 0.05) 100%),
+    linear-gradient(180deg, rgba(12, 22, 40, 0.15) 0%, rgba(12, 22, 40, 0.55) 100%);
 }
 
 .hero-content {
@@ -170,12 +170,14 @@ main {
   line-height: 0.95;
   letter-spacing: -0.05em;
   margin: 0 0 1.15rem;
+  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
 }
 
 .hero-text {
-  color: #d5deef;
+  color: #e8eef8;
   font-size: 1.12rem;
   margin: 0 0 1.8rem;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
 }
 
 .hero-actions {
@@ -347,7 +349,7 @@ main {
   z-index: -1;
   border-radius: 24px;
   overflow: hidden;
-  opacity: 0.22;
+  opacity: 0.4;
 }
 
 .experience-backdrop img {
@@ -390,14 +392,24 @@ main {
 }
 
 .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.js-ready .reveal {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.reveal.visible {
+.js-ready .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.hero .reveal {
+  opacity: 1;
+  transform: none;
 }
 
 @keyframes slowZoom {
