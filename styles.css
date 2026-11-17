@@ -566,8 +566,15 @@ main {
   color: var(--text);
   font-weight: 600;
   font-size: 0.92rem;
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
+}
+
+.contact-value-email {
+  font-size: clamp(0.82rem, 2.4vw, 0.98rem);
+  letter-spacing: -0.01em;
+  white-space: normal;
 }
 
 .site-footer {
